@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: #993399;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #c8a2c8;
+}
+</style>
+</head>
+<body>
+
+<button class="btn"><i class="fa fa-home"></i><a href="{% url 'home' %}">Home</a>
+</button>
+
+</body>
+</html>
+
+<html lang="en">
+
+<head>
+<style>
+body {
+  background-image: url("https://www.teahub.io/photos/full/1-14085_beach-hotel-background-hd.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+</style>
+</head>
+
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="left" style="background-color:#993399;">
+    <h2>Hotel Renan</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Buscar..." title="Type in a category">
+    <ul id="myMenu">
+     <li><a href="{% url 'lazer' %}">Piscina e áreas de lazer</a></li>
+      <li><a href="{% url 'refeicoes' %}">Refeições</a></li>
+      <li><a href="{% url 'bebidas' %}">Drinks e bebidas</a></li>
+      <li><a href="{% url 'acomodacoes' %}">Acomodações</a></li>
+      <li><a href="{% url 'depoimentos' %}">Depoimentos</a></li>
+      </ul>
+  </div>
+
+
+  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Acomodações:</h2>
+
+<div class="card">
+  <img src="https://www.rialehoteis.com.br/wp-content/uploads/2017/06/suite_master_frente_mar_varanda_casal-1024x664.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Quarto com vista para o mar</b></h4> 
+    <p>R$ 150,00</p> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: #993399;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #c8a2c8;
+}
+</style>
+</head>
+<body>
+
+    <button class="btn"></i> Alugar</button>
+
+</body>
+
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="https://s2.glbimg.com/SvWExUEhNZD6gCddhGcI9-vqkBQ=/0x0:620x465/984x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat5/f/original/2014/05/03/inspiracoes-quarto-620-04_1436104370743685191.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Quarto de casal</b></h4> 
+    <p>R$ 90,00</p> 
+    <button class="btn"></i> Alugar</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/32/9a/a6/quarto-com-internet-wifi.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Quarto com WI-FI</b></h4> 
+    <p>R$ 70,00</p> 
+    <button class="btn"></i> Alugar</button>
+  </div>
+</div> 
+
+<div class="card">
+  <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Quarto de solteiro</b></h4> 
+    <p>R$ 50,00</p> 
+    <button class="btn"></i> Alugar</button>
+  </div>
+</div> 
+
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: #993399;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #c8a2c8;
+}
+</style>
+</head>
+<body>
+
+<button class="btn"><i class="fa fa-home"></i><a href="{% url 'home' %}">Home</a></button>
+
+</body>
+</html>
+
+<html lang="en">
+
+<head>
+<style>
+body {
+  background-image: url("https://www.teahub.io/photos/full/1-14085_beach-hotel-background-hd.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+</style>
+</head>
+
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="left" style="background-color:#993399;">
+    <h2>Hotel Renan</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Buscar..." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="{% url 'lazer' %}">Piscina e áreas de lazer</a></li>
+      <li><a href="{% url 'refeicoes' %}">Refeições</a></li>
+      <li><a href="{% url 'bebidas' %}">Drinks e bebidas</a></li>
+      <li><a href="{% url 'acomodacoes' %}">Acomodações</a></li>
+      <li><a href="{% url 'depoimentos' %}">Depoimentos</a></li>
+      </ul>
+  </div>
+
+  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Depoimentos:</h2>
+
+<div class="container">
+  <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:90px">
+  <p><span>Tom Holland.</span> Ator na empresa The Spiderman.</p>
+  <p>Um ótimo ambiente para passar as noites. Super recomendo.</p>
+</div>
+
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4V7hR3g_mPnDb_BTUEqs2UhF3yusX8jwCaA&usqp=CAU" alt="Avatar" style="width:90px">
+  <p><span>Tobey Maguire.</span> Ator na empresa The Spiderman.</p>
+  <p>Um dos melhores hotéis pelos quais já passei. Me hospedo sempre e não me arrependo. Venham vocês também.</p>
+</div>
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdl4lhhAeIEjNzinGN2Hv28Bgti-yJ6qUwg&usqp=CAU" alt="Avatar" style="width:90px">
+  <p><span>Andrew Garfield.</span> Ator na empresa The Spiderman.</p>
+  <p>Esse hotel é espetacular. Realmente digno de um hotel 5 estrelas. Pretendo voltar mais vezes.</p>
+</div>
+
+
+</body>
+</html>

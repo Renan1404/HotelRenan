@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+    <style>
+    nav {
+        display:flex;
+
+    }
+    
+    </style>
+        <nav>
+            <h2>Hotel Renan</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Buscar..." title="Type in a category">
+            <ul id="myMenu">
+            <li><a href="#">Piscina e áreas de lazer</a></li>
+            <li><a href="#">Refeições</a></li>
+            <li><a href="#">Drinks e bebidas</a></li>
+            <li><a href="#">Acomodações</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            </ul>
+        </nav>
+    
+    </header> 
+  <main>
+  {% block content %}
+  {% endblock %}
+  
+  </main>
+  </body>
+  </html>
