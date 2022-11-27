@@ -135,8 +135,14 @@ button:hover {
     <p>Ao criar sua conta, você concorda com nossos <a href="#" style="color:dodgerblue">Termos de Uso</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancelar</button>
-      <button type="submit" class="signupbtn">Criar</button>
+      <a href="{% url 'login'%}"class="btn"><i class="fa-home">Cancelar</button></a>
+        <button onclick="myFunction()"class="btn">Criar</button>
+<script>
+function myFunction() {
+  alert("Usuário cadastrado!");
+}
+</script>
+
     </div>
   </div>
 </form>
