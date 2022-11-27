@@ -52,3 +52,9 @@ def bebidas(request):
 
 def lazer(request):
     return render(request, 'lazer.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def cadastro(request):
+    return render(request, 'cadastro.html')
