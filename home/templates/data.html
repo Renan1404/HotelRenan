@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+body {
+  background-image: url("https://www.teahub.io/photos/full/1-14085_beach-hotel-background-hd.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+</style>
+</head>
+
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<button class="btn"><i class="fa fa-home"></i><a href="{% url 'home' %}">Home</a></button>
+<button class="btn"><i class="fa fa-home"></i><a href="{% url 'login' %}">Sair</a></button>
+
+<form>
+    <div>
+        
+      <label for="diaa">data de ida:</label>
+      <input type="date" id="ida" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+       <label for="diaa">data de volta:</label>
+      <input type="date" id="volta" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+      <span class="validity"></span>
+    </div>
+    <div class="clearfix">
+        
+        
+        <button onclick="myFunction()"class="btn">Comprar</button>
+  <script>
+  function myFunction() {
+    alert("Data agendada com sucesso!");
+  }
+  </script>
+    </div>
+<div></div>
+
+  </form>
+  
+
+</body>
+

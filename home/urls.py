@@ -11,4 +11,5 @@ urlpatterns = [
     path('depoimentos/', depoimentos, name="depoimentos"),  
     path('bebidas/', bebidas, name="bebidas"),  
     path('lazer/', lazer, name="lazer"),  
+    path('data/', data, name="data"),  
 ]

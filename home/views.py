@@ -58,3 +58,6 @@ def login(request):
 
 def cadastro(request):
     return render(request, 'cadastro.html')
+
+def data(request):
+    return render(request, 'data.html')
