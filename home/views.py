@@ -61,3 +61,6 @@ def cadastro(request):
 
 def data(request):
     return render(request, 'data.html')
+
+def compra(request):
+    return render(request, 'compra.html')

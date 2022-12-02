@@ -12,4 +12,5 @@ urlpatterns = [
     path('bebidas/', bebidas, name="bebidas"),  
     path('lazer/', lazer, name="lazer"),  
     path('data/', data, name="data"),  
+    path('compra/', compra, name="compra"),  
 ]
